@@ -54,9 +54,10 @@ namespace AD_Manipulator
           
         }
 
+
+        // Utilizes the System.
         private void GetADUsers()
         {
-            
             using (var context = new PrincipalContext(ContextType.Domain, "murraycompany.local"))
             {
                 using (var searcher = new PrincipalSearcher(new UserPrincipal(context)))
@@ -65,7 +66,8 @@ namespace AD_Manipulator
                     {
                         DirectoryEntry de = result.GetUnderlyingObject() as DirectoryEntry;
                         var clsuser = new User();
-                        MessageBox.Show(Convert.ToString(de.Properties["samAccountName"].Value) + " , "+ Convert.ToString(de.Properties["givenName"].Value));
+                        MessageBox.Show(Convert.ToString(de.Properties["samAccountName"].Value) + " , "+ Convert.ToString(de.Properties["givenName"].Value
+                             + " , " + Convert.ToString(de.Properties["mail"].Value) ));
                     }
                     
                 }
