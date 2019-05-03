@@ -8,6 +8,11 @@
         Title="MainWindow" Height="450" Width="800"
         Background="#112233">
     <Grid>
-        
+        <Label Content="Blake's AD Manager" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="24" Foreground="White" />
+        <TextBox Name="passwordTB"  HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="201" Margin="17,356,0,0" TextChanged="TextBox_TextChanged"/>
+        <Label Content="Password For Domain" HorizontalAlignment="Left" Margin="17,318,0,0" VerticalAlignment="Top" FontSize="18" Foreground="White" />
+        <Button Click="Submit_Click" Name="Submit" Content="Submit" HorizontalAlignment="Left" Margin="31,384,0,0" VerticalAlignment="Top" Width="168" Height="25"/>
+        <DataGrid Name="dt" HorizontalAlignment="Left" Height="419" VerticalAlignment="Top" Width="555" Margin="237,0,0,0"/>
+
     </Grid>
 </Window>
