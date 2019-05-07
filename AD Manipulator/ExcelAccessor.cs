@@ -42,7 +42,7 @@ namespace AD_Manipulator
             excel = new Excel.Application();
             wb = excel.Workbooks.Open(path);
             Sheet = wb.Worksheets[1];
-            MessageBox.Show(Sheet.Cells[1][3].Value2, "Hello");
+            
         }
 
 
